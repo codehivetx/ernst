@@ -1,6 +1,6 @@
 {
   "name": "@codehivetx/ernst",
-  "version": "1.0.3",
+  "version": "1.0.4-0",
   "description": "Serial Port terminal server",
   "main": "index.js",
   "scripts": {
