@@ -1,0 +1,10 @@
+{
+    "saltArgs": [
+	"-nw",
+	"-f",
+	"life"
+    ],
+    "saltCmd": "/usr/local/bin/emacs",
+    "portPath": "/dev/tty.usbserial-1234",
+    "baudRate": 57600
+}
