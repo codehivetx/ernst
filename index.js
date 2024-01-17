@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /*
   Copyright (c) 2023-2024 Code Hive Tx, LLC
   SPDX-License-Identifier: Apache-2.0
