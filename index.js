@@ -7,9 +7,11 @@
 
 const { spawn } = require('node:child_process');
 const { SerialPort } = require('serialport')
-const { baudRate, portPath, saltCmd, saltArgs } = require('./config.json');
-const port = new SerialPort({ path: portPath, baudRate })
 const { name, version } = require('./package.json');
+const { readFileSync } = require('node:fs');
+const config = JSON.parse(readFileSync('./config.json', 'utf-8'));
+const { baudRate, portPath, saltCmd, saltArgs } = config;
+const port = new SerialPort({ path: portPath, baudRate })
 
 // print a welcome message to the console
 console.log(name, version, portPath, baudRate);
